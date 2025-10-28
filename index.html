@@ -1,0 +1,35 @@
+<!--
+    File: index.html
+    GUI Assignment: HW3 - Dynamic Multiplication Table
+    Platon Supranovich, UMass Lowell Computer Science, Platon_Supranovich@student.uml.edu
+    Copyright (c) 2025 by Platon. All rights reserved. May be freely copied or
+    excerpted for educational purposes with credit to the author.
+    updated by PS on October 20, 2025 at 8:00 AM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <form id="tableForm">
+        <label>Start Multiplier: <input type="number" id="startCol" required></label>
+        <label>End Multiplier: <input type="number" id="endCol" required></label>
+        <label>Start Multiplicand: <input type="number" id="startRow" required></label>
+        <label>End Multiplicand: <input type="number" id="endRow" required></label>
+        <button type="submit">Generate Table</button>
+        <div id="error" class="error"></div>
+    </form>
+
+    <div class="table-container">
+        <table id="resultTable"></table>
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
